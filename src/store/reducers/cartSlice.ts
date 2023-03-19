@@ -1,6 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IProduct } from "../../model/Product";
-import { addToCart, deleteItemCart, fetchCartProducts } from "./ActionCreators";
+import {
+  addToCart,
+  changeQuantityItemCart,
+  deleteItemCart,
+  fetchCartProducts,
+} from "./ActionCreators";
 
 interface CartState {
   products: IProduct[];
@@ -74,6 +79,21 @@ export const cartSlice = createSlice({
       state.error = error.message
         ? error.message
         : "Ошибка при удалении элемента из корзины";
+    });
+    builder.addCase(changeQuantityItemCart.pending, (state) => {
+      state.isLoading = true;
+    });
+    builder.addCase(changeQuantityItemCart.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.error = "";
+      state.products = state.products.map((product) =>
+        product.id === action.meta.arg.id
+          ? {
+              ...product,
+              quantity: action.meta.arg.quantity,
+            }
+          : product
+      );
     });
   },
 });

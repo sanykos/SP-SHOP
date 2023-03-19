@@ -1,24 +1,5 @@
 {
-  "cart": [
-    {
-      "name": "New Balance 373 Modern Classics",
-      "price": 800,
-      "quantity": 1,
-      "id": 1
-    },
-    {
-      "name": "New Balance 5740 Think Colorfully",
-      "price": 940,
-      "quantity": 1,
-      "id": 8
-    },
-    {
-      "name": "New Balance 373 Modern Classics",
-      "price": 800,
-      "quantity": 1,
-      "id": 9
-    }
-  ],
+  "cart": [],
   "products": [
     {
       "id": 1,

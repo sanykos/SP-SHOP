@@ -55,9 +55,28 @@ export const deleteItemCart = createAsyncThunk(
   "cart/deleteItemCart",
   async (id: number, thunkApi) => {
     try {
-      const response = await axios.request({
+      await axios.request({
         url: `http://localhost:3000/cart/${id}`,
         method: "DELETE",
+        headers: {
+          "X-Requested-With": "XMLHttpRequest",
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      return thunkApi.rejectWithValue((error as Error).message);
+    }
+  }
+);
+
+export const changeQuantityItemCart = createAsyncThunk(
+  "cart/changeQuantityItemCart",
+  async (product: IProduct, thunkApi) => {
+    try {
+      await axios.request({
+        url: `http://localhost:3000/cart/${product.id}`,
+        method: "PUT",
+        data: product,
         headers: {
           "X-Requested-With": "XMLHttpRequest",
           "Content-Type": "application/json",

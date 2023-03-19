@@ -24,7 +24,7 @@ export const Cart: FC = () => {
   };
 
   const totalPrice = useMemo(
-    () => products.reduce((acc, p) => (acc += p.price), 0),
+    () => products.reduce((acc, p) => (acc += p.price * p.quantity), 0),
     [products]
   );
 
