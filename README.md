@@ -1,3 +1,9 @@
 # SP-SHOP
-npm run server 
-npm run dev
+
+## Запуск проекта
+
+### npm install
+
+### npm run server
+
+## npm run dev
