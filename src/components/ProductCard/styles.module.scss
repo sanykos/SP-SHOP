@@ -1,0 +1,38 @@
+.productCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    border: 1px solid #E7E7E7;
+    width:100%;
+    max-width: 250px;
+    margin-bottom: 50px;
+    max-height: 300px;
+    &:nth-child(3n+3) {
+        margin-right: 0;
+    }
+    .title {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 13px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+        .addToCart {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 3px;
+            background-color: #3366FF;
+            margin-right: 15px;
+            border:none;
+        }
+    }
+    
+}

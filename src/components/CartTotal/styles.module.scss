@@ -1,0 +1,22 @@
+.cartTotal {
+    margin-top: 40px;
+    .line {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        span {
+            font-size: 14px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &__total {
+            span {
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+    }
+
+}

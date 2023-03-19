@@ -1,0 +1,15 @@
+.changeQuantity {
+    display: flex;
+    align-items: center;
+    .plusBtn, .minusBtn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    };
+    .quantity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+    }
+}

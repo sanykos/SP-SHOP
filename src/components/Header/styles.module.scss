@@ -1,0 +1,23 @@
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #CFCFCF;
+    .cart {
+        position: relative;
+        .counter {
+            position: absolute;
+            top:-3px;
+            right: -8px;
+            width: 13px;
+            height: 13px;
+            background-color: #3366FF;
+            font-size: 10px;
+            text-align: center;
+            line-height: 13px;
+            border-radius: 100%;
+            color: #fff;
+        }
+    }
+}

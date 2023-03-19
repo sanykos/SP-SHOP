@@ -1,0 +1,32 @@
+.cartItem {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 73px;
+    .deleteBtn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .descriptionBlock {
+        width: 200px;
+    }
+    .imageBlock {
+        margin: auto;
+        width: 90px;
+        height: 50px;
+        min-width: 90px;
+        .image {
+            max-height: 100%;
+            min-width: 100%;
+        }
+    }
+
+    .title {
+       font-size: 14px;
+       margin-bottom: 15px;
+    }
+    .price {
+        margin-left: 25px;
+    }
+}
