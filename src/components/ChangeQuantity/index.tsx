@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Icon from "../../UI/Icon";
+import Icon from "@UI/Icon";
 import styles from "./styles.module.scss";
 
 interface ChangeQuantityProps {

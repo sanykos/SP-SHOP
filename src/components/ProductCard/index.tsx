@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import productImg from "../../assets/product1.jpg";
-import Icon from "../../UI/Icon";
-import { IProduct } from "../../model/Product";
+import productImg from "@assets/product1.jpg";
+import Icon from "@UI/Icon";
+import { IProduct } from "@model/Product";
 
 interface ProductCardProps {
   product: IProduct;

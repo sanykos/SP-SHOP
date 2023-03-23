@@ -1,12 +1,12 @@
 import { FC } from "react";
 import cn from "classnames";
-import Icon from "../../UI/Icon";
+import Icon from "@UI/Icon";
 import { ChangeQuantity } from "../ChangeQuantity";
 import { BasketProductCardProps } from "./interfaces";
-import { changeQuantityItemCart } from "../../store/reducers/ActionCreators";
+import { changeQuantityItemCart } from "@store/reducers/ActionCreators";
 
 import styles from "./styles.module.scss";
-import { useAppDispatch } from "../../hooks/redux";
+import { useAppDispatch } from "@hooks/redux";
 
 export const CartItem: FC<BasketProductCardProps> = ({
   product,

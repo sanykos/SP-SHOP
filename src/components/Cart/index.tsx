@@ -1,11 +1,11 @@
 import { FC, useEffect, useMemo } from "react";
 import { CartItem } from "../CartItem";
-import productImg from "../../assets/product1.jpg";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
+import productImg from "@assets/product1.jpg";
+import { useAppDispatch, useAppSelector } from "@hooks/redux";
 import {
   fetchCartProducts,
   deleteItemCart,
-} from "../../store/reducers/ActionCreators";
+} from "@store/reducers/ActionCreators";
 
 import styles from "./styles.module.scss";
 import { CartTotal } from "../CartTotal";

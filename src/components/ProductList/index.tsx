@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import styles from "./styles.module.scss";
 import { ProductCard } from "../ProductCard";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
+import { useAppDispatch, useAppSelector } from "@hooks/redux";
 import {
   fetchProducts,
   changeQuantityItemCart,
   addToCart,
-} from "../../store/reducers/ActionCreators";
+} from "@store/reducers/ActionCreators";
 
 export const ProductList = () => {
   const { products: cartProducts } = useAppSelector(

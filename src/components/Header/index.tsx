@@ -1,8 +1,8 @@
 import React from "react";
-import Icon from "../../UI/Icon";
-import { ReactComponent as Logo } from "../../assets/logo.svg";
+import Icon from "@UI/Icon";
+import { ReactComponent as Logo } from "@assets/logo.svg";
 import styles from "./styles.module.scss";
-import { useAppSelector } from "../../hooks/redux";
+import { useAppSelector } from "@hooks/redux";
 
 export const Header: React.FC = () => {
   const { products } = useAppSelector((state) => state.cartReducer);
